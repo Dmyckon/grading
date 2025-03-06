@@ -85,7 +85,7 @@
             var chemm = Number(document.getElementById("chem").value)
 
             if (enng > 100 || maath > 100 || bioo > 100 || chemm > 100) {
-                alert("Marks cannot be greater than 100")
+                document.getElementById("total").innerHTML = "Alert: score cannot be higher than 100"
             } else {
                 var total = enng + maath + bioo + chemm
                 document.getElementById("total").innerHTML = "English score:" +enng+ "<br> Math score:" +maath+ "<br> Biology score:" +bioo+ "<br> Chemistry score:" +chemm+ "<br> total is:" + total
